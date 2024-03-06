@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.VenueTabFragment"
+    android:paddingBottom="15dp"
+    android:paddingHorizontal="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/form_background">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_venue_name"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/event_venue_label"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/event_venue_name_text"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="170dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:focusedByDefault="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="sdfkyuvbnmjfsdhnv"
+                        android:textColor="@color/font_green"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/event_venue_label"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_venue_address"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/event_venue_address_label"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/event_venue_address_text"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="170dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:focusedByDefault="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="sdfkyuvbnmjfsdhnv"
+                        android:textColor="@color/font_green"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/event_venue_address_label"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_venue_city"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/event_venue_city_label"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="City/State"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/event_venue_city_text"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="170dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:focusedByDefault="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="sdfkyuvbnmjfsdhnv"
+                        android:textColor="@color/font_green"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/event_venue_city_label"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/event_venue_contact"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/event_venue_contact_label"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Info"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/event_venue_contact_text"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="170dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:focusedByDefault="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="sdfkyuvbnmjfsdhnv"
+                        android:textColor="@color/font_green"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/event_venue_contact_label"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/map"
+                    tools:context=".EventCard"
+                    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/yellow_background"
+                android:paddingTop="15dp"
+                android:id="@+id/venue_info_block"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open Hours"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:id="@+id/open_hours_label"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/open_hours_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="sgbsdfgb"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General Rules"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:id="@+id/gen_rules_label"
+                    android:layout_marginVertical="10dp"/>
+
+                <TextView
+                    android:id="@+id/gen_rules_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="sgbsdfgb"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Child Rules"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:id="@+id/child_rules_label"
+                    android:layout_marginVertical="10dp"/>
+
+                <TextView
+                    android:id="@+id/child_rules_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="sgbsdfgb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/off_white_background"
+                    android:text="sdfhvb"
+                    android:textSize="36sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/off_white_background"
+                    android:text="sdfhvb"
+                    android:textSize="36sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/off_white_background"
+                    android:text="sdfhvb"
+                    android:textSize="36sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</FrameLayout>

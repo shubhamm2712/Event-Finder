@@ -1,0 +1,377 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white !important;
+  align-items: center;
+}
+
+.no-favorites{
+  background-color: white;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-top: 0px !important;
+  line-height:normal;
+}
+
+.favorite-text{
+  color: aquamarine;
+}
+
+.nav-link{
+  color: white !important;
+}
+.active{
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+
+.search-box{
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;  
+}
+
+.search-box h2, .search-box h1{
+  font-family: serif;
+  color: #ececec;
+}
+
+.search-box h1{
+  font-size: 36px;
+}
+
+.search-box hr{
+  border: 1px solid #bababa !important;
+  opacity: 1;
+}
+
+form label{
+  color: rgb(135, 181, 203);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  form label{
+    font-size: 16px;
+  }
+}
+
+.form-control,.form-select, button {
+  font-size: 14px !important;
+}
+
+option{
+  background-color: rgba(33, 33, 33, 0.874);
+  color: white;
+}
+
+.table-error{
+  background-color: white;
+  border-radius: 15px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 800;
+  margin-top: 100px !important;
+  line-height:normal;
+}
+
+.table-div{
+  margin-top: 100px !important;
+  font-size: 14px;
+}
+
+.events-table-icon{
+  width: 75px;
+  height: 75px;
+}
+
+#table-head-left{
+  border-top-left-radius: 15px;
+}
+
+#table-head-right{
+  border-top-right-radius: 15px;
+}
+
+.event-row:hover{
+  cursor: pointer;
+}
+
+#event-detail-div{
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#back-button:hover{
+  cursor: pointer;
+}
+
+#favorite-table{
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+#favorite-table tr{
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+#favorite-table td, #favorite-table th{
+  padding: 4px 5px;
+}
+
+.hover-pointer:hover{
+  cursor: pointer;
+}
+
+.row-hover:hover{
+  background-color: #ebebeb;
+}
+
+.tab-heading{
+  color: rgb(235, 235, 235) !important;
+  text-transform: none !important;
+}
+
+#tabs-box{
+  background-color: #2c9c8d;
+}
+
+.MuiTabs-indicator{
+  background-color: #1360ad !important;
+}
+
+.full-width{
+  width: 100%;
+  overflow: hidden;
+}
+
+.outer-div{
+  width: 200%;
+  position: relative;
+}
+
+.tab-item{
+  width: 50%;
+}
+
+.hide-tab{
+  animation-name: hiding-tab;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  overflow-y: scroll;
+}
+
+@keyframes hiding-tab {
+  0%   {height: auto;}
+  100% {height: 0;}
+}
+
+.c0-1,.c0-2{
+  left: 0px;
+  animation-fill-mode: forwards;
+  animation-name: left-to-right-animation;
+  animation-duration: 0.75s;
+}
+
+.c1-2{
+  left:0px;
+  animation-fill-mode: forwards;
+  animation-name: left-to-right-1-animation;
+  animation-duration: 0.75s;
+}
+
+@keyframes left-to-right-animation {
+  from {left: 0px;}
+  to {left: -100%;}
+}
+
+@keyframes left-to-right-1-animation {
+  from {left: 0px;}
+  to {left: -100%;}
+}
+
+.c2-0,.c2-1{
+  left: -100%;
+  animation-fill-mode: forwards;
+  animation-name: right-to-left-animation;
+  animation-duration: 0.75s;
+}
+
+.c1-0{
+  left: -100%;
+  animation-fill-mode: forwards;
+  animation-name: right-to-left-1-animation;
+  animation-duration: 0.75s;
+}
+
+@keyframes right-to-left-animation {
+  from {left: -100%;}
+  to {left: 0;}
+}
+
+@keyframes right-to-left-1-animation {
+  from {left: -100%;}
+  to {left: 0;}
+}
+
+.share-text {
+  font-weight: 600;
+}
+
+.event-card-label {
+  color: rgb(130, 255, 230);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.event-card-data{
+  font-size: 14px;
+}
+
+.seatmap-div{
+  vertical-align: middle !important;
+  padding: auto;
+}
+
+.onsale{
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+.offsale{
+  background-color: red;
+  color: white;
+  border-radius: 9px;
+  padding: 2px 5px;
+}
+.canceled{
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+  padding: 2px 5px;
+}
+.postponed, .rescheduled{
+  background-color: orange;
+  color: white;
+  border-radius: 9px;
+  padding: 2px 5px;
+}
+
+.spotify-error{
+  background-color: white;
+  border-radius: 15px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 800;
+  line-height:normal;
+  margin: 80px auto !important;
+}
+
+span.show-more-less-clickable,span.show-more-less-clickable{
+  color: #55b1eb;
+  text-decoration-color: #55b1eb;
+  font-size: small;
+}
+span.show-more-less-clickable:hover,span.show-more-less-clickable:hover{
+  text-decoration: underline !important;
+}
+
+.modal-title{
+  color: black !important;
+}
+
+.modal-footer{
+  justify-content: left !important;
+}
+
+
+
+
+
+
+
+.carousel-indicators{
+  display: none !important;
+}
+
+.carousel-inner .active{
+  border: none;
+}
+
+.spotify-artist-name{
+  color: rgb(130, 255, 230);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.spotify-heading{
+  color: rgb(130, 255, 230);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#spotify-followers{
+  color: white;
+  font-size: 14px;
+}
+
+.album-text{
+  color: rgb(130, 255, 230);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  color: black !important;
+  opacity: 0.9 !important;
+}

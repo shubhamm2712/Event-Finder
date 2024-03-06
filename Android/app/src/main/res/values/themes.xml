@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EventFinder" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="Theme.EventFinder" parent="Base.Theme.EventFinder">
+
+    </style>
+    <style name="EventFinder.MainTab" parent="Theme.EventFinder">
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="EventFinder.Autocomplete" parent="Theme.EventFinder">
+        <item name="backgroundColor">@color/black</item>
+        <item name="android:textColor">@color/font_green</item>
+        <item name="color">@color/font_green</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="EventFinder.Spinner" parent="Theme.EventFinder">
+        <item name="color">@color/font_green</item>
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+    <style name="EventFinder.Switch" parent="Theme.EventFinder">
+        <item name="colorControlActivated">@color/font_green</item>
+    </style>
+    <style name="EventFinder.Launcher" parent="Theme.EventFinder">
+        <item name="android:windowBackground">@drawable/launch_theme</item>
+    </style>
+</resources>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./static/style.css">
+    </head>
+    <body>
+        <div id = "fix_width">
+            <div id = "form_div">
+                <p id = "search_form_title">Events Search</p>
+                <hr id = "hr_form">
+                <form id = "search_form" onsubmit = "return false;">
+                    <div class = "full_length_form">
+                        <label>Keyword<span class = "required_form">*</span></label><br>
+                        <input type = "text" name = "keyword" id = "form_keyword" class = "full_input" required>
+                    </div>
+                    <div class = "full_length_form">
+                        <div id = "distance_section">
+                            <label>Distance (miles)</label>
+                            <input type = "number" name = "distance" placeholder = "10" id = "form_distance" class = "half_input">
+                        </div>
+                        <div id = "category_section">
+                            <label>Category<span class = "required_form">*</span></label>
+                            <select name = "category" id = "form_category" class = "half_input">
+                                <option value = "" id = "form_category_default" selected>Default</option>
+                                <option value = "KZFzniwnSyZfZ7v7nJ">Music</option>
+                                <option value = "KZFzniwnSyZfZ7v7nE">Sports</option>
+                                <option value = "KZFzniwnSyZfZ7v7na">Art and Theatre</option>
+                                <option value = "KZFzniwnSyZfZ7v7nn">Film</option>
+                                <option value = "KZFzniwnSyZfZ7v7n1">Miscellaneous</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class = "full_length_form">
+                        <label>Location<span class = "required_form">*</span></label>
+                        <input type = "checkbox" name = "auto_detect" id = "form_auto_detect" onclick = "auto_detect_click()">
+                        <label id = "auto_detect_label">Auto-Detect Location</label><br>
+                        <input type = "text" name = "location" id = "form_location" class = "full_input" required>
+                    </div>
+                    <div>
+                        <input type = "hidden" name = "latitude" id = "form_latitude">
+                        <input type = "hidden" name = "longitude" id = "form_longitude">
+                    </div>
+                    <div>
+                        <button name = "search" id = "search_button" onclick = "validate_and_search();">SEARCH</button>
+                        <button name = "clear" id = "clear_button" onclick = "clear_form();return false;">CLEAR</button>
+                    </div>
+                </form>
+            </div>
+            <div id = "events_list"></div>
+            <div id = "event_details"></div>
+            <div id = "show_venue"></div>
+            <div id = "venue_details"></div>
+            <div id = "no_events"></div>
+        </div>
+    </body>
+    <script src = "./static/javascript.js"></script>
+</html>

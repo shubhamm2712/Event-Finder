@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white_background"
+    tools:context=".fragments.SearchFormFragment"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingBottom="24dp"
+        android:background="@drawable/form_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keyword*"
+            android:textColor="@color/font_green"
+            android:textSize="22sp"
+            android:layout_marginBottom="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:height="48dp"
+            android:layout_marginBottom="30dp"
+            android:inputType="textAutoComplete"
+            android:backgroundTint="@color/font_green"
+            android:imeOptions="actionDone"
+
+            android:hint="Enter the Keyword"
+            android:textColorHint="@android:color/darker_gray"
+            android:completionThreshold="1"
+            android:maxLines="1"
+            android:id="@+id/form_keyword"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance (Miles)*"
+            android:textColor="@color/font_green"
+            android:textSize="22sp"
+            android:layout_marginBottom="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:height="48dp"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/font_green"
+            android:text="10"
+            android:id="@+id/form_distance"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category*"
+            android:textColor="@color/font_green"
+            android:textSize="22sp"
+            android:layout_marginBottom="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/form_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/font_green"
+            android:layout_marginBottom="30dp"
+            android:spinnerMode="dropdown"
+            android:dropDownVerticalOffset="-340dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location*"
+                android:textColor="@color/font_green"
+                android:textSize="22sp"
+                android:layout_marginBottom="15dp"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto-Detect"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:paddingLeft="60dp"
+                app:trackTint="@color/track_color"
+                app:thumbTint="@color/thumb_color"
+                android:theme="@style/EventFinder.Switch"
+                android:id="@+id/form_auto_det"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:height="48dp"
+            android:backgroundTint="@color/font_green"
+            android:inputType="text"
+            android:hint="Enter the Location"
+            android:imeOptions="actionDone|actionGo"
+            android:textColorHint="@android:color/darker_gray"
+            android:maxLines="1"
+            android:id="@+id/form_location"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/green_button"
+                android:paddingHorizontal="38dp"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/orange_button"
+                android:paddingHorizontal="40dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,439 @@
+body{
+    background-image: url("/static/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#fix_width{
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#form_div{
+    width: 500px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 18px;
+}
+
+#search_form_title{
+    font-size: 25px;
+    margin: 0;
+    color: rgb(218, 218, 218);
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+
+#hr_form{
+    border: 1px solid rgb(128, 128, 128);
+    margin-bottom : 25px;
+}
+
+#search_form{
+    color: rgb(123, 168, 189);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.full_length_form{
+    width: 485px;
+}
+
+.required_form{
+    color: red;
+}
+
+.full_input{
+    width: 475px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+#form_distance{
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    width: 140px;
+    display: block;
+}
+
+#form_category{
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#distance_section{
+    display: inline-block;
+}
+
+#category_section{
+    float: right;
+}
+
+select{
+    width:230px;
+}
+
+option{
+    background-color: rgb(50, 50, 50);
+}
+
+#form_auto_detect{
+    margin-bottom: 0px;
+}
+
+#auto_detect_label{
+    color:rgb(167, 167, 167);
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#search_button{
+    background-color: rgb(239, 95, 12);
+    box-shadow: 0 3px rgb(177, 74, 14);
+    margin-right: 2px;
+}
+
+#search_button:hover{
+    background-color: rgb(243, 153, 101);
+}
+
+#clear_button{
+    background-color: rgb(16, 105, 207);
+    box-shadow: 0 3px rgb(22, 63, 110);
+}
+
+#clear_button:hover{
+    background-color: rgb(95, 157, 227);
+}
+
+/*error text*/
+#error_text{
+    width: 1000px;
+    background-color: white;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+/*Table*/
+#events_table{
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 35px;
+    margin-bottom: 100px;
+    color: black;
+    table-layout: fixed;
+    width: 1000px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#table_header_row{
+    box-shadow: 0 3px 5px rgb(200, 200, 200);
+}
+
+.genre_table{
+    padding: 10px 2px;
+}
+
+#date_column{
+    width:140px;
+}
+
+#icon_column{
+    width:120px;
+}
+
+#name_column:hover,#genre_column:hover,#venue_column:hover,.event_names_clickable:hover{
+    cursor:pointer;
+}
+
+.event_names_clickable:hover{
+    color: rgb(123, 0, 255);
+}
+
+#genre_column{
+    width:105px;
+}
+
+#venue_column{
+    width:200px;
+}
+
+.icon_table{
+    width: 60px;
+    height: 40px;
+}
+
+.date_table{
+    display: block;
+}
+
+
+/*Event card*/
+#event_card{
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+#event_name{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 10px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#card_1{
+    display: inline-block;
+    width: 250px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+#card_2{
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 500px;
+    height: 350px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#seatmap_card{
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.card_detail_label{
+    display: block;
+    color: rgb(130, 255, 230);
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.card_detail_info{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+.card_info_link{
+    color: rgb(0, 179, 255);
+    text-decoration: none;
+}
+.card_info_link:hover{
+    cursor: pointer;
+    color: rgb(64, 0, 255);
+}
+
+#ticket_status_label{
+    margin-bottom: 8px;
+}
+.on_sale_ticket_status{
+    background-color: green;
+    color: white;
+    border-radius: 9px;
+    padding: 5px;
+}
+.off_sale_ticket_status{
+    background-color: red;
+    color: white;
+    border-radius: 9px;
+    padding: 5px;
+}
+.cancelled_ticket_status{
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    padding: 5px;
+}
+.postponed_ticket_status{
+    background-color: orange;
+    color: white;
+    border-radius: 9px;
+    padding: 5px;
+}
+
+
+/*Show Venue*/
+#show_venue_text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: lightgray;
+}
+#show_venue_logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+}
+#show_venue_logo:hover{
+    cursor: pointer;
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+/*Venue card*/
+#venue_card_border{
+    width: 816px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+    padding: 7px;
+}
+
+#venue_card_inner_border{
+    border: 1px solid black;
+    border-radius: 18px;
+}
+
+#venue_card_name{
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#venue_image_card{
+    margin: 20px auto;
+    text-align: center;
+    width: 800px;
+}
+
+#venue_image{
+    margin: 0 auto;
+    height: 50px;
+    object-fit: contain;
+}
+
+#container_venue{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+#venue_info_1{
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+#venue_info_2{
+    width: 399px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+#address_part_1{
+    width: 180px;
+    display: inline-block;
+    vertical-align: top;
+}
+#write_address{
+    float: right;
+    font-weight: 800;
+}
+
+.venue_card_link{
+    text-decoration: none;
+    color: rgb(105, 167, 243);
+}
+
+.venue_card_link:hover{
+    color: rgb(76, 0, 255);
+}
+
+#address_part_2{
+    width: 210px;
+    margin-left: 6px;
+    text-align: left;
+    display: inline-block;
+}
+
+#venue_card_address{
+    margin: 10px auto;
+}

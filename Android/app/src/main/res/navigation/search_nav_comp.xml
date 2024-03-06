@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_nav_comp"
+    app:startDestination="@id/searchFormFragment">
+
+    <fragment
+        android:id="@+id/searchFormFragment"
+        android:name="com.example.eventfinder.fragments.SearchFormFragment"
+        android:label="fragment_search_form"
+        tools:layout="@layout/fragment_search_form" >
+        <action
+            android:id="@+id/action_searchFormFragment_to_eventsListFragment"
+            app:destination="@id/eventsListFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsListFragment"
+        android:name="com.example.eventfinder.fragments.EventsListFragment"
+        android:label="fragment_events_list"
+        tools:layout="@layout/fragment_events_list" >
+        <action
+            android:id="@+id/action_eventsListFragment_to_searchFormFragment"
+            app:destination="@id/searchFormFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+</navigation>
